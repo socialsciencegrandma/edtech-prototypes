@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learning in four ways · Interactive concept showcase</title>
+<meta name="description" content="Four interactive educational mockups: research review, session participation, accessible expression, and a farming game with separate orchestration learning activities.">
+<!-- Tailwind CSS v4.3.3, compiled and embedded for offline use. Material Design 3-inspired component styles below. -->
+<style>
+/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-slate-100: oklch(96.8% 0.007 247.896);
+    --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --font-weight-semibold: 600;
+    --tracking-tight: -0.025em;
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-9 {
+    margin-top: calc(var(--spacing) * 9);
+  }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-slate-100 {
+    border-color: var(--color-slate-100);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  @media (width >= 40rem) {
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-outline-style: solid;
+    }
+  }
+}
+
+</style>
+<style>
+@layer components {
+:root{--pink:#f9dce6;--pink-light:#fff2f6;--pink-ink:#704757;--blue:#d8ebfb;--blue-light:#eff7fe;--blue-ink:#315a77;--ink:#273541;--muted:#687782;--line:#e2e7ec;--surface:#f7f9fc;--md-sys-color-primary:#315a77;--md-sys-color-primary-container:#d8ebfb;--md-sys-color-secondary-container:#f9dce6;--md-sys-color-surface:#fff;--md-sys-shape-corner-large:16px;--md-sys-shape-corner-extra-large:28px}
+*{box-sizing:border-box}body{margin:0;background:#f7f9fc;color:var(--ink);font-family:Inter,"Avenir Next",Arial,sans-serif;font-size:14px;line-height:1.55}button,input,textarea,select{font:inherit}button{cursor:pointer;transition:background .18s,box-shadow .18s,transform .18s}button:hover:not(:disabled){filter:brightness(.97)}button:active:not(:disabled){transform:translateY(1px)}button:disabled{opacity:.48;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid #457b9f;outline-offset:3px}button svg{flex-shrink:0}[hidden]{display:none!important}h1,h2,h3,p{margin:0}h1{font-size:clamp(34px,4.1vw,57px);font-weight:550;letter-spacing:-2.5px;line-height:1.12}h2{font-size:24px;font-weight:550;letter-spacing:-.7px}h3{font-size:17px;font-weight:600;letter-spacing:-.3px}.muted{color:var(--muted)}.tiny{font-size:11px}.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:700;text-transform:uppercase}.icon{width:21px;height:21px;display:inline-block;vertical-align:middle;stroke:currentColor;stroke-width:1.65;fill:none;stroke-linecap:round;stroke-linejoin:round}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:50px;padding:6px 11px;font-size:11px;font-weight:600;background:var(--blue-light);color:var(--blue-ink)}.pink{background:var(--pink-light);color:var(--pink-ink)}.btn{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 19px;border-radius:100px;border:1px solid transparent;font-weight:600;font-size:12px;background:var(--blue);color:var(--blue-ink)}.btn.primary{background:var(--blue-ink);color:white}.btn.outline{background:white;border-color:#cbd8e2;color:var(--ink)}.btn.pink{background:var(--pink);color:var(--pink-ink)}.btn.small{min-height:34px;padding:6px 13px;font-size:11px}.icon-btn{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:0;background:transparent}.card{background:white;border:1px solid var(--line);border-radius:20px}.inset{background:var(--surface);border-radius:16px;padding:18px}.field{display:block;background:white;border:1px solid #b7c6d1;border-radius:12px;padding:12px 14px;width:100%;color:var(--ink)}textarea.field{resize:vertical;min-height:75px}.label{display:block;font-size:11px;font-weight:600;color:var(--muted);margin-bottom:6px}.app-header{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;padding:17px 23px;border-bottom:1px solid var(--line)}.app-logo{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--blue)}.avatar{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--pink);font-size:11px;font-weight:600}.segmented{display:inline-flex;border:1px solid #bccbd6;border-radius:50px;overflow:hidden}.segmented button{padding:8px 17px;border:0;border-right:1px solid #bccbd6;background:transparent;font-size:11px;min-height:36px}.segmented button:last-child{border:0}.segmented button[aria-pressed=true]{background:var(--blue);color:var(--blue-ink);font-weight:700}.showcase{max-width:1376px;margin:auto;padding:0 48px}.brandmark{display:flex;width:29px;height:29px;gap:3px;transform:rotate(-12deg)}.brandmark i{display:block;border-radius:8px;width:13px;background:var(--blue)}.brandmark i:last-child{background:var(--pink);margin-top:7px;margin-bottom:-7px}.hero-art{position:relative;width:255px;height:115px}.hero-art .orb{position:absolute;border-radius:100%;width:88px;height:88px;right:12px;top:0;background:var(--pink)}.hero-art .sheet{position:absolute;background:white;border:1px solid #d8e2eb;border-radius:15px;width:96px;height:108px;left:37px;top:9px;transform:rotate(-14deg);box-shadow:0 6px 0 #e3eff9;display:grid;place-items:center;color:var(--blue-ink)}.hero-art .bubble{position:absolute;right:30px;bottom:-6px;padding:13px 21px;background:var(--blue);border:5px solid #f7f9fc;border-radius:22px;color:var(--blue-ink)}.concept-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:30px 0 26px}.concept-tab{display:flex;align-items:center;gap:13px;border:1px solid var(--line);border-radius:18px;padding:16px;background:white;text-align:left;min-height:81px;color:var(--muted)}.concept-tab[aria-selected=true]{background:var(--blue);border-color:#a9cce5;color:var(--ink);box-shadow:0 3px 0 #c2dced}.concept-tab .tab-number{font-size:11px;display:grid;place-items:center;border-radius:50%;width:30px;height:30px;background:#f3f6f9}.concept-tab[aria-selected=true] .tab-number{background:white}.concept-tab strong{font-size:13px;display:block;font-weight:650}.concept-tab small{font-size:10px;display:block;margin-top:3px}.screen-shell{border:1px solid #d8e1e9;border-radius:24px;overflow:hidden;background:white;box-shadow:0 10px 40px #2a4d6a09}.window-bar{padding:10px 20px;display:flex;justify-content:space-between;align-items:center;background:#edf2f7;font-size:10px;color:#617382;letter-spacing:.3px}.dots{display:flex;gap:5px}.dots i{width:6px;height:6px;border-radius:50%;background:#c3d0dd}.panel{animation:arrive .2s ease-out}@keyframes arrive{from{opacity:.4;transform:translateY(3px)}to{opacity:1;transform:none}}.footnotes{display:grid;grid-template-columns:1.2fr 2fr;gap:55px;padding:25px 2px 35px}.footnotes p{color:var(--muted);font-size:12px}.footnotes h3{font-size:13px;margin-bottom:5px}.flow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.flow span{font-size:11px;background:white;border:1px solid var(--line);border-radius:8px;padding:7px 10px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:14px 23px;z-index:50;border-radius:12px;box-shadow:0 5px 20px #27354130;max-width:90vw;font-size:13px}.a-layout{display:grid;grid-template-columns:185px minmax(0,1fr) 275px;min-height:590px}.review-nav{padding:23px 14px;border-right:1px solid var(--line)}.bucket{width:100%;display:flex;align-items:center;gap:9px;text-align:left;background:transparent;border:0;border-radius:10px;padding:11px 9px;font-size:11px;color:#526372;margin-top:3px}.bucket.active{background:var(--pink-light);color:var(--pink-ink)}.bucket .count{margin-left:auto;font-size:10px}.bucket-sign{font-size:16px;width:19px;text-align:center}.paper-space{background:#f0f4f8;padding:20px 26px}.paper{position:relative;max-width:580px;min-height:445px;margin:15px auto 0;background:white;border:1px solid #e0e6ec;border-radius:3px;padding:32px 34px;box-shadow:0 3px 12px #26374805}.paper p{font:13px/1.9 Georgia,serif;margin:14px 0;color:#52616a}.paper h3{font:600 22px/1.25 Georgia,serif;max-width:340px}.mark{background:#fbe2eb;border:0;display:inline;text-align:left;font:inherit;color:inherit;padding:1px 2px;box-decoration-break:clone}.handwritten{font:italic 16px Georgia,serif;color:#a65e7a;transform:rotate(-4deg);margin:16px 0 12px 20px}.task-pane{border-left:1px solid var(--line);padding:23px 18px}.task-card{padding:14px;border:1px solid #e5d8df;border-radius:13px;background:#fff9fb;margin-top:14px}.source-link{border:0;background:var(--blue-light);border-radius:6px;color:var(--blue-ink);padding:3px 7px;font-size:10px}.synthesis{padding:22px;border-top:1px solid var(--line);background:white}.synthesis-content{font-size:12px;margin-top:15px;line-height:1.8}.mapline{display:grid;grid-template-columns:55px 1fr 70px;gap:10px;padding:9px 0;border-bottom:1px solid #edf1f5}.b-layout{display:grid;grid-template-columns:350px minmax(0,1fr);gap:28px;background:var(--surface);padding:28px}.phone{border:6px solid white;border-radius:32px;background:white;box-shadow:0 8px 25px #3854700b;overflow:hidden}.phone-inner{padding:17px 18px 21px}.phone-time{font-size:10px;display:flex;justify-content:space-between;padding:9px 15px;background:white}.reactions{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.reaction{border:1px solid #d9e3eb;border-radius:15px;background:white;min-height:72px;font-size:10px;color:var(--muted)}.reaction b{display:block;font-size:26px;font-weight:400;color:var(--blue-ink)}.reaction[aria-pressed=true]{border-color:#84b3d5;background:var(--blue-light)}.timeline{display:flex;align-items:end;gap:5px;height:80px;padding:10px 0 0}.timeline i{flex:1;background:var(--blue);border-radius:4px 4px 0 0}.timeline i:nth-child(3n){background:var(--pink)}.queue-item{display:flex;align-items:start;gap:11px;padding:15px 0;border-bottom:1px solid var(--line)}.queue-item:last-child{border:0}.c-layout{display:grid;grid-template-columns:300px minmax(0,1fr) 236px;min-height:600px}.symbol-pane{padding:22px;border-right:1px solid var(--line);background:#fbfcfe}.symbols{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.symbol{border:1px solid #ccdae5;border-radius:16px;padding:10px 3px;min-height:74px;background:white;color:var(--blue-ink);font-size:11px}.symbol strong{display:block;font-size:24px;line-height:1.2;font-weight:500;margin-bottom:6px}.symbol[aria-pressed=true]{background:var(--blue);border-color:#95bada}.writing-pane{padding:23px 29px;background:#f3f6fa}.writing-doc{background:white;min-height:405px;border:1px solid var(--line);border-radius:5px;padding:28px;margin-top:15px}.writing-doc p{font:14px/1.9 Georgia,serif;color:#62707b;margin-top:18px}.candidate{border-left:3px solid #8eafcb;background:var(--blue-light);padding:15px;margin:19px 0}.command-pane{padding:23px 17px}.command{width:100%;display:flex;gap:10px;text-align:left;align-items:center;border:1px solid var(--line);border-radius:14px;background:white;padding:12px;margin:9px 0;font-size:12px}.command .icon{color:var(--blue-ink)}.farm-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:22px;padding:25px;background:var(--blue-light)}.farm-world{position:relative;min-height:430px;overflow:hidden;border-radius:20px;background:#deedf1;border:1px solid #d4e4e6}.farm-sky{height:120px;background:#d9edf9;position:relative}.cloud{position:absolute;top:23px;left:13%;background:#fff;border-radius:100px;width:87px;height:22px}.cloud:before{content:'';position:absolute;left:20px;bottom:0;width:35px;height:39px;background:white;border-radius:50%}.cloud.two{left:70%;top:42px;transform:scale(.7)}.farm-ground{position:absolute;inset:95px 0 0;background:#e1eddf;border-radius:50% 30% 0 0/12% 15% 0 0}.farm-path{position:absolute;left:0;right:0;top:205px;height:64px;background:#f7ecdc;transform:rotate(-8deg)}.barn{position:absolute;top:94px;left:12%;width:133px;height:112px;background:#e9adbd;border:4px solid #fff2f2;border-radius:4px}.barn:before{content:'';position:absolute;width:112px;height:112px;top:-57px;left:6px;background:#b07884;transform:rotate(45deg);border-radius:6px;clip-path:polygon(0 0,100% 0,0 100%)}.barn-door{position:absolute;bottom:0;left:40px;width:48px;height:68px;background:#fff0e8;border:4px solid white;border-radius:26px 26px 0 0}.barn-door:after{content:'';position:absolute;left:17px;top:0;bottom:0;border-left:2px solid #dcaab7}.tree{position:absolute;width:64px;height:75px;background:#b4cdb4;border-radius:50%;top:133px;right:15%}.tree:after{content:'';position:absolute;bottom:-32px;left:29px;background:#bea092;width:8px;height:40px}.tree.small{right:5%;top:111px;transform:scale(.7)}.fence{position:absolute;top:252px;left:7%;font-size:30px;color:#fcfff9;letter-spacing:0;white-space:nowrap;font-weight:900}.garden{position:absolute;bottom:35px;left:28%;display:grid;grid-template-columns:repeat(3,68px);gap:10px;transform:rotate(-7deg)}.plot{width:68px;height:57px;border:3px solid #b89382;background:#caa48c;border-radius:11px;font-size:31px;box-shadow:0 5px 0 #b18b78}.plot.watered{background:#a9928c;border-color:#9a8280}.pond{position:absolute;bottom:15px;left:20px;width:118px;height:66px;border:7px solid #d1e1d2;border-radius:50%;background:#b5d8e8;transform:rotate(-20deg)}.flower{position:absolute;color:#d69eae;font-size:28px}.farm-status{position:absolute;left:15px;top:14px;z-index:3;display:flex;gap:8px}.farm-status span{background:#ffffffde;backdrop-filter:blur(4px);padding:7px 12px;border-radius:30px;font-size:11px}.farm-tools{position:absolute;bottom:11px;right:12px;background:white;padding:6px 13px;border-radius:40px;font-size:21px;letter-spacing:7px}.progress{height:7px;background:#e5ecf2;border-radius:50px;overflow:hidden}.progress>i{height:100%;display:block;background:#87aecb;transition:width .3s}.bridge-grid{display:grid;grid-template-columns:1fr 35px 1fr;align-items:center;gap:15px;margin-top:15px}.bridge-card{padding:16px 20px;border-radius:16px;background:var(--pink-light)}.bridge-card:nth-child(3n){background:var(--blue-light)}.exercise-choice{display:flex;align-items:center;gap:12px;padding:14px 18px;border:1px solid #ccdae5;border-radius:14px;background:white;width:100%;margin:9px 0;text-align:left}.exercise-choice[aria-pressed=true]{background:var(--blue);border-color:#9ac0db}.learning-page{padding:32px 50px 40px;max-width:1010px;margin:auto;min-height:570px}.learning-page h2{font-size:29px;margin:12px 0}.learning-step{display:flex;gap:7px;align-items:center;font-size:11px;color:var(--muted)}.learning-step b{background:var(--blue);border-radius:30px;padding:5px 12px;color:var(--blue-ink)}dialog{border:1px solid var(--line);border-radius:24px;padding:28px;max-width:590px;width:90vw;color:var(--ink);box-shadow:0 20px 80px #27354135}dialog::backdrop{background:#27354160}footer{padding:24px 0;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}
+@media(min-width:1500px){.showcase{padding:0 40px}}
+@media(max-width:1100px){.showcase{padding:0 25px}.a-layout{grid-template-columns:155px minmax(0,1fr) 230px}.paper-space{padding:18px}.paper{padding:25px}.c-layout{grid-template-columns:255px minmax(0,1fr)}.command-pane{grid-column:1/-1;border-top:1px solid var(--line);display:flex;gap:12px;flex-wrap:wrap;align-items:center}.command-pane .command{width:auto}.command-pane>p{width:100%}.b-layout{grid-template-columns:300px minmax(0,1fr);padding:20px;gap:20px}.concept-tab{padding:13px;gap:8px}.farm-layout{grid-template-columns:minmax(0,1fr) 225px}.garden{left:22%}}
+@media(max-width:800px){.showcase{padding:0 16px}.hero-art{display:none}.concept-tabs{grid-template-columns:repeat(2,1fr);gap:8px;margin-top:23px}.concept-tab{min-height:72px}.a-layout{grid-template-columns:1fr}.review-nav{border-right:0;border-bottom:1px solid var(--line);display:flex;gap:5px;overflow:auto;padding:12px}.review-nav .eyebrow,.review-nav .nav-extra{display:none}.bucket{min-width:150px;margin:0;white-space:nowrap}.task-pane{border-left:0;border-top:1px solid var(--line)}.paper-space{padding:16px}.paper{max-width:none;min-height:400px}.b-layout,.c-layout,.farm-layout{grid-template-columns:1fr}.phone{max-width:420px;margin:auto;width:100%}.symbol-pane{border:0}.command-pane{grid-column:auto}.footnotes{grid-template-columns:1fr;gap:20px}.app-header{flex-wrap:wrap;padding:16px}.hide-mobile{display:none}.learning-page{padding:24px 20px}.bridge-grid{grid-template-columns:1fr 20px 1fr;gap:8px}.bridge-card{padding:13px;font-size:12px}.farm-world{min-height:430px}.garden{left:50%;transform:translateX(-50%) rotate(-7deg);bottom:66px}.window-bar{padding:10px 14px}.writing-pane{padding:20px}.app-header .segmented button{padding:8px 13px}}
+@media(max-width:500px){.garden{grid-template-columns:repeat(3,58px);gap:8px}.plot{width:58px;height:51px}.queue-item{flex-wrap:wrap}.queue-item .btn{margin-left:0}.learning-step{flex-wrap:wrap}.mapline{grid-template-columns:45px 1fr 58px;gap:7px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M3 4h6a4 4 0 0 1 3 2 4 4 0 0 1 3-2h6v15h-6a4 4 0 0 0-3 2 4 4 0 0 0-3-2H3zM12 6v15"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5ZM20 2v4M18 4h4"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 15a3 3 0 0 1-3 3H9l-5 3V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3zM8 8h8M8 12h5"/></symbol>
+<symbol id="i-edit" viewBox="0 0 24 24"><path d="m4 16 12-12a2 2 0 0 1 4 4L8 20H4zM14 6l4 4M3 23h18"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-volume" viewBox="0 0 24 24"><path d="M3 9h4l5-5v16l-5-5H3zM16 8a6 6 0 0 1 0 8M19 4a11 11 0 0 1 0 16"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C0 7 11 3 21 3c0 10-4 20-16 16ZM4 21 16 9"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2h8l5 5v15H6zM14 2v6h5M9 12h7M9 16h7"/></symbol>
+<symbol id="i-undo" viewBox="0 0 24 24"><path d="m8 4-5 5 5 5M3 9h11a6 6 0 0 1 0 12"/></symbol>
+</defs></svg>
+<div class="showcase">
+<header class="flex items-center justify-between py-7"><div class="flex items-center gap-3"><span class="brandmark" aria-hidden="true"><i></i><i></i></span><span class="text-sm font-semibold tracking-tight">Learning in four ways</span></div><span class="pill pink">Concept collection <span class="hide-mobile"> / 01—04</span></span></header>
+<section class="flex items-center justify-between pt-6 pb-2"><div><p class="eyebrow muted mb-4">Higher education · Interactive mockups</p><h1>Less friction.<br>More room to learn.</h1><p class="muted mt-5 max-w-xl text-sm">Four learning experiences, brought into view.<br>Choose a concept and explore its sample workflow.</p></div><div class="hero-art" aria-hidden="true"><div class="orb"></div><div class="sheet"><svg class="icon" style="width:40px;height:40px"><use href="#i-book"/></svg></div><div class="bubble"><svg class="icon"><use href="#i-spark"/></svg></div></div></section>
+<nav class="concept-tabs" aria-label="Select a concept" role="tablist">
+<button id="tab-a" class="concept-tab" role="tab" aria-selected="true" aria-controls="panel-a" data-tab="a"><span class="tab-number">01</span><span><strong>Research & review</strong><small>Read. Mark. Follow through.</small></span></button>
+<button id="tab-b" class="concept-tab" role="tab" aria-selected="false" aria-controls="panel-b" tabindex="-1" data-tab="b"><span class="tab-number">02</span><span><strong>Session participation</strong><small>A small signal, a response.</small></span></button>
+<button id="tab-c" class="concept-tab" role="tab" aria-selected="false" aria-controls="panel-c" tabindex="-1" data-tab="c"><span class="tab-number">03</span><span><strong>Accessible expression</strong><small>Your ideas, in your words.</small></span></button>
+<button id="tab-d" class="concept-tab" role="tab" aria-selected="false" aria-controls="panel-d" tabindex="-1" data-tab="d"><span class="tab-number">04</span><span><strong>Farm & learn</strong><small>Play. Connect. Apply.</small></span></button>
+</nav>
+<div class="flex items-center justify-between mb-3 gap-3"><p class="text-xs muted" id="context-label">01 / Research reading and review</p><span class="tiny muted">Illustrative mockups · Sample content</span></div>
+<div class="screen-shell">
+<div class="window-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span id="window-title">Research workspace</span><span>INTERACTIVE PREVIEW</span></div>
+<section class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
+<div class="app-header"><div class="flex items-center gap-3"><span class="app-logo"><svg class="icon"><use href="#i-book"/></svg></span><div><h3>Reading room</h3><p class="tiny muted">Literature review / Working collection</p></div></div><div class="flex items-center gap-3"><div class="segmented" aria-label="Reading mode"><button aria-pressed="true" data-mode="scan">Scan mode</button><button aria-pressed="false" data-mode="read">Read mode</button></div><button class="btn small outline" id="export-review">Export review</button><span class="avatar hide-mobile">JL</span></div></div>
+<div class="a-layout">
+<aside class="review-nav"><p class="eyebrow muted mb-4 px-2">Review buckets</p>
+<button class="bucket" data-bucket="Keep"><span class="bucket-sign">✓</span>Keep<span class="count">2</span></button>
+<button class="bucket" data-bucket="Delete"><span class="bucket-sign">−</span>Delete<span class="count">0</span></button>
+<button class="bucket" data-bucket="Corroborate internally"><span class="bucket-sign">↔</span>Corroborate internally<span class="count">1</span></button>
+<button class="bucket active" data-bucket="Corroborate externally"><span class="bucket-sign">?</span>Corroborate externally<span class="count" id="external-count">1</span></button>
+<button class="bucket" data-bucket="Review with someone else"><span class="bucket-sign">♧</span>Review with someone else<span class="count">1</span></button>
+<button class="bucket" data-bucket="Read again later"><span class="bucket-sign">↶</span>Read again later<span class="count">1</span></button>
+<div class="nav-extra mt-9 inset"><svg class="icon mb-3"><use href="#i-edit"/></svg><p class="text-xs font-semibold mb-1">Keep your reading flow</p><p class="tiny muted" id="mode-help">Capture a concern now. Return to the evidence in Read mode.</p></div></aside>
+<div class="paper-space"><div class="flex items-center justify-between gap-2"><span class="tiny muted">retrieval-practice.pdf · v1</span><div class="segmented"><button id="annotation-note" aria-pressed="true">Note</button><button id="annotation-command" aria-pressed="false">Command</button></div></div><article class="paper" id="source-paper"><div class="flex justify-between mb-5"><span class="eyebrow muted" style="font-size:8px">Sample research excerpt</span><span class="tiny muted">03 / 12</span></div><h3>Retrieval practice and<br>student learning</h3><p class="tiny" style="font-family:inherit;font-size:10px">DEMONSTRATION DOCUMENT · NOT A PUBLISHED STUDY</p><p><b>2.1 From familiarity to recall</b><br>Rereading can make material feel familiar. Retrieval practice asks learners to bring an idea to mind before checking their understanding.</p><p id="claim-paragraph"><button class="mark" id="marked-passage" aria-label="Open review task for highlighted claim">Weekly retrieval activities improved long-term understanding for every student in the course.</button> This suggests a possible role for regular practice in the learning design.</p><div class="handwritten">Every student? What supports this?</div><p><b>2.2 Interpreting the findings</b><br>The example describes one course. Differences in prior knowledge and the duration of follow-up would need closer examination before generalising the result.</p><div class="flex justify-between mt-6 pt-4 border-t border-slate-100"><span class="tiny muted">Source anchor: p. 3, §2.1</span><span class="tiny muted">1 linked concern</span></div></article><p class="tiny muted mt-3" id="annotation-hint">Note mode · Handwriting records a thought without triggering an action.</p></div>
+<aside class="task-pane"><div class="flex justify-between items-center"><h3 id="task-heading">Captured concern</h3><span class="pill pink">1 open</span></div><p class="tiny muted mt-2">A mark becomes a passage-linked task.</p><div class="task-card"><span class="eyebrow" style="color:var(--pink-ink);font-size:9px" id="bucket-label">Corroborate externally</span><p class="text-sm font-semibold mt-3" id="task-question">Does the evidence support “every student”?</p><button class="source-link mt-3" id="source-jump">p. 3 · §2.1 ↗</button><p class="tiny muted mt-3">Reviewer’s note · Document v1</p></div><div id="scan-actions"><p class="text-xs muted mt-5 mb-4">The concern is saved. Keep scanning, or return to investigate it.</p><button class="btn w-full" id="start-read">Review this concern <svg class="icon"><use href="#i-arrow"/></svg></button></div><div id="read-actions" hidden><div class="inset mt-4"><span class="pill">Suggested link · Unverified</span><p class="text-xs mt-3">Compare the claim with the limitations in §2.2 and the study’s participant-level results.</p><p class="tiny muted mt-2">A repeated claim is not corroboration.</p></div><label class="label mt-4" for="review-judgment">Your judgment</label><textarea class="field text-xs" id="review-judgment" placeholder="What does the evidence support?"></textarea><button class="btn primary w-full mt-3" id="save-judgment">Record judgment</button></div><button class="btn small outline w-full mt-4" id="manual-task">+ Add a task</button><div id="manual-task-form" hidden class="mt-3"><label class="label" for="manual-task-text">Task for p. 3, §2.1</label><input id="manual-task-text" class="field" placeholder="Describe the concern"><button class="btn small mt-2" id="save-manual-task">Save task</button></div></aside>
+</div>
+<div class="synthesis"><div class="flex items-center justify-between gap-3 flex-wrap"><div class="flex items-center gap-2"><svg class="icon"><use href="#i-spark"/></svg><h3>Make the connections</h3><span class="tiny muted hide-mobile">Source-linked synthesis</span></div><select class="field" style="width:auto;font-size:11px;padding:8px 12px" id="synthesis-type" aria-label="Synthesis view"><option>Standard Argument Form</option><option>Theory of Change</option><option>Annotated bibliography</option><option>Within-document map</option></select></div><div class="synthesis-content" id="synthesis-output"></div></div>
+</section>
+<section class="panel" id="panel-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+<div class="app-header"><div class="flex items-center gap-3"><span class="app-logo" style="background:var(--pink)"><svg class="icon"><use href="#i-chat"/></svg></span><div><h3>In the room</h3><p class="tiny muted">Learning science · Lecture 04</p></div></div><div class="flex items-center gap-3"><span class="pill"><span style="width:6px;height:6px;background:#547d9b;border-radius:50%"></span>Live session · 24:18</span><span class="avatar">TA</span></div></div>
+<div class="b-layout"><div><p class="eyebrow muted mb-3">Participant view</p><div class="phone"><div class="phone-time"><b>09:41</b><span>▰ ▰ ▰</span></div><div class="phone-inner"><span class="pill pink">Lecture 04</span><h2 class="mt-4">A thought?<br>Let it be heard.</h2><p class="text-xs muted mt-2 mb-5">Linked to this moment in the session.</p><div class="segmented mb-4"><button aria-pressed="true" id="b-text-mode">Text & symbols</button><button aria-pressed="false" id="b-draw-mode">Draw</button></div><div id="b-reaction-input"><div class="reactions"><button class="reaction" data-reaction="Interested" aria-pressed="false"><b>♡</b>Interested</button><button class="reaction" data-reaction="Confused" aria-pressed="true"><b>∿</b>Confused</button><button class="reaction" data-reaction="Question" aria-pressed="false"><b>?</b>Question</button><button class="reaction" data-reaction="Assistance" aria-pressed="false"><b>!</b>Assistance</button></div></div><div id="b-draw-input" hidden><canvas id="gesture-canvas" width="520" height="180" style="width:100%;height:110px;border:1px dashed #a8c3d7;border-radius:14px;touch-action:none" aria-label="Draw a feedback symbol"></canvas><div class="flex items-center justify-between mt-2"><span class="tiny muted">Confirm your intended meaning below.</span><button class="btn small outline" id="clear-drawing">Clear</button></div><select id="draw-intent" class="field mt-3" aria-label="Meaning of drawing"><option>Confused</option><option>Interested</option><option>Question</option><option>Assistance</option></select></div><label class="label mt-4" for="b-message">Add a little context</label><textarea class="field text-xs" id="b-message">Could you explain why recall differs from recognition?</textarea><label class="label mt-4" for="b-context">Session moment</label><select class="field text-xs" id="b-context"><option>24:18 · Recall vs recognition</option><option>22:40 · Checking understanding</option></select><p class="tiny muted mt-2" id="route-hint">Reaction → session feedback</p><button class="btn primary w-full mt-4" id="submit-feedback">Send feedback <svg class="icon"><use href="#i-arrow"/></svg></button><p class="tiny muted mt-3" id="participant-status" role="status">You can edit the moment before sending.</p></div></div></div>
+<div><div class="flex justify-between items-center mb-3"><p class="eyebrow muted">Educator & response view</p><span class="tiny muted">Sample session data</span></div><div class="card p-5"><div class="flex justify-between gap-3"><div><h3>Where the room paused</h3><p class="text-xs muted mt-1">Feedback by session moment</p></div><span class="pill pink" id="reaction-total">12 reactions</span></div><div class="timeline" aria-label="Illustrative reaction timeline"><i style="height:18%"></i><i style="height:29%"></i><i style="height:23%"></i><i style="height:36%"></i><i style="height:17%"></i><i style="height:31%"></i><i style="height:25%"></i><i style="height:46%"></i><i style="height:74%"></i><i style="height:100%"></i><i style="height:81%"></i><i style="height:40%"></i><i style="height:24%"></i><i style="height:33%"></i><i style="height:18%"></i><i style="height:13%"></i></div><div class="flex justify-between tiny muted mt-2"><span>00:00</span><span>24:18 · Recall vs recognition</span><span>40:00</span></div><div class="inset mt-4"><div class="flex justify-between items-center"><span class="eyebrow muted" style="font-size:9px">Linked transcript excerpt</span><span class="tiny muted" id="transcript-time">24:18</span></div><p class="text-sm mt-2" id="transcript-copy">“Recognising an answer and retrieving it without a cue ask different things of the learner.”</p><p class="tiny muted mt-2">Timing is approximate. Check context before interpreting.</p><p class="tiny mt-3" id="latest-reaction" role="status"></p></div></div>
+<div class="card p-5 mt-4"><div class="flex justify-between"><h3>Responses & follow-up</h3><span class="tiny muted">Assigned in this demo</span></div><div id="response-queue"><div class="queue-item"><span class="pill pink">?</span><div class="flex-1"><b class="text-xs">Can you show a retrieval example?</b><p class="tiny muted mt-1">Q&A moderator · 23:52</p></div><button class="btn small outline queue-resolve">Mark answered</button></div><div class="queue-item"><span class="pill">!</span><div class="flex-1"><b class="text-xs">The slide text is difficult to see.</b><p class="tiny muted mt-1">Teaching assistant · Acknowledged</p></div><button class="btn small outline queue-resolve">Mark resolved</button></div></div><div class="flex gap-2 items-start mt-3"><svg class="icon" style="width:17px"><use href="#i-spark"/></svg><p class="tiny muted">Suggested topic cluster: recall vs recognition. Reactions indicate what to revisit; they do not establish understanding.</p></div></div></div></div>
+</section>
+<section class="panel" id="panel-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+<div class="app-header"><div class="flex items-center gap-3"><span class="app-logo"><svg class="icon"><use href="#i-edit"/></svg></span><div><h3>In my words</h3><p class="tiny muted">Academic expression workspace</p></div></div><div class="flex items-center gap-3"><span class="pill pink">Your meaning comes first</span><button class="btn small outline" id="c-export">Export text</button></div></div>
+<div class="c-layout"><aside class="symbol-pane"><p class="eyebrow muted mb-2">01 · Compose an idea</p><h3>What do you want to say?</h3><p class="text-xs muted mt-2 mb-4">Choose a relationship, then supply your meaning. Buttons also work with a keyboard.</p><div class="symbols"><button class="symbol" aria-pressed="true" data-relation="because"><strong>∵</strong>Because</button><button class="symbol" aria-pressed="false" data-relation="however"><strong>↔</strong>However</button><button class="symbol" aria-pressed="false" data-relation="therefore"><strong>∴</strong>Therefore</button></div><label class="label mt-5" for="c-claim">Your claim</label><textarea id="c-claim" class="field text-xs">Recorded lectures can support revision</textarea><label class="label mt-4" for="c-reason" id="c-reason-label">Your reason</label><textarea id="c-reason" class="field text-xs">students can revisit difficult explanations at their own pace</textarea><label class="label mt-4" for="c-certainty">Your intended certainty</label><select id="c-certainty" class="field text-xs"><option value="may">Tentative · may</option><option value="can">Possibility · can</option></select><button class="btn primary w-full mt-5" id="c-propose"><svg class="icon"><use href="#i-spark"/></svg>Propose wording</button><p class="tiny muted mt-3">Sample inputs are editable. No argument or evidence is invented.</p></aside>
+<div class="writing-pane"><div class="flex items-center justify-between"><div><p class="eyebrow muted">02 · Review & develop</p><p class="tiny muted mt-1">Essay / Learning beyond the classroom</p></div><span class="pill">Draft 01</span></div><article class="writing-doc"><p class="eyebrow muted" style="font:600 9px Arial;letter-spacing:1.2px;margin:0">Working draft · Sample text</p><h2 class="mt-4" style="font:24px Georgia,serif">Learning beyond<br>the classroom</h2><p>Access to a lecture recording is one part of a wider learning experience. The way students use it deserves closer attention.</p><div id="c-paragraphs"></div><div class="candidate" id="c-candidate"><span class="pill">Proposed wording · Review before adding</span><p id="c-proposed-text" style="color:var(--ink);margin-top:12px">Recorded lectures may support revision because students can revisit difficult explanations at their own pace.</p><div class="flex gap-2 flex-wrap mt-4"><button class="btn small primary" id="c-accept">Add to paragraph</button><button class="btn small outline" id="c-edit-meaning">Revise my input</button></div></div><p class="tiny muted" style="font:11px Arial;line-height:1.7" id="c-status" role="status">Check the claim, relationship and certainty against your intended meaning.</p></article></div>
+<aside class="command-pane"><p class="eyebrow muted mb-3">03 · Edit & output</p><label for="c-target" class="label">Command target</label><select id="c-target" class="field text-xs mb-3"><option value="proposal">Proposed sentence</option><option value="paragraph">Added paragraph</option></select><button class="command" id="c-soften"><svg class="icon"><use href="#i-edit"/></svg>Make less certain</button><button class="command" id="c-move"><svg class="icon"><use href="#i-arrow"/></svg>Move paragraph up</button><button class="command" id="c-undo"><svg class="icon"><use href="#i-undo"/></svg>Undo last edit</button><div class="inset mt-5"><h3 class="text-sm">Choose your output</h3><p class="tiny muted mt-2 mb-3">Text for written work. Speech when it suits you.</p><button class="btn small w-full" id="c-speak"><svg class="icon"><use href="#i-volume"/></svg>Read draft aloud</button><button class="btn small outline w-full mt-2" id="c-stop">Stop speaking</button></div><p class="tiny muted mt-5">Symbol meanings and access methods shown here are illustrative.</p></aside></div></section>
+<section class="panel" id="panel-d" role="tabpanel" aria-labelledby="tab-d" hidden>
+<div id="d-content"></div>
+</section>
+</div>
+<div class="footnotes"><div><h3 id="concept-caption">Capture the thought. Keep the source.</h3><p id="concept-description">Quick review marks lead to passage-linked tasks, evidence checks and editable synthesis. The reader retains the judgment.</p></div><div><p class="eyebrow muted mb-3" id="flow-label">Explore the workflow</p><div class="flow" id="workflow"></div></div></div>
+<footer class="flex justify-between gap-4 flex-wrap"><span>Concepts A–C from the supplied appendices · Concept D from your farming-game brief</span><span>Baby pink + baby blue + white · Material Design 3 styling</span></footer>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<dialog id="export-dialog"><div class="flex items-center justify-between"><h2 id="dialog-title">Review record</h2><button class="icon-btn" id="close-dialog" aria-label="Close dialog">✕</button></div><p class="text-xs muted mt-2">Preview of the local mockup export.</p><pre id="export-content" class="mt-5 p-4" style="background:var(--surface);border-radius:12px;white-space:pre-wrap;font:12px/1.8 inherit;max-height:50vh;overflow:auto"></pre><button class="btn primary mt-4" id="download-export">Download text file</button></dialog>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const icon=n=>`<svg class="icon" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let toastTimer; function toast(s){$('#toast').textContent=s;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,4200)}
+const concepts={a:{label:'01 / Research reading and review',window:'Research workspace',caption:'Capture the thought. Keep the source.',description:'Quick review marks lead to passage-linked tasks, evidence checks and editable synthesis. The reader retains the judgment.',flow:['Mark a passage','Review the task','Check evidence','Record judgment']},b:{label:'02 / Educational participation and response',window:'Session participation',caption:'A signal is only the beginning.',description:'A reaction, question or assistance request stays linked to its session moment, response owner and follow-up status.',flow:['React or request','Confirm context','Route to an owner','Retain the outcome']},c:{label:'03 / Symbol-based accessible expression',window:'Academic expression workspace',caption:'Support expression. Preserve authorship.',description:'Symbols convey relationships and editing commands. Student-supplied ideas become proposed wording, with review and correction before output.',flow:['Supply your meaning','Propose wording','Review and revise','Text or speech']},d:{label:'04 / Farming simulator and agent orchestration learning',window:'Farm & learn · Experience preview',caption:'Play first. Make the connection between levels.',description:'Ordinary farming gameplay is followed by a separate concept bridge and an orchestration exercise at each level. Try both levels of the sample journey.',flow:['Farm · Level 1','Bridge 1','Exercise 1','Farm · Level 2','Bridge 2','Exercise 2']}};
+function tab(id){$$('[data-tab]').forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===id));b.tabIndex=b.dataset.tab===id?0:-1});$$('.panel').forEach(p=>p.hidden=p.id!=='panel-'+id);let c=concepts[id];$('#context-label').textContent=c.label;$('#window-title').textContent=c.window;$('#concept-caption').textContent=c.caption;$('#concept-description').textContent=c.description;$('#workflow').innerHTML=c.flow.map((x,i)=>`${i?'<b class="muted tiny" aria-hidden="true">→</b>':''}<span>${x}</span>`).join('');if(id!=='c'&&'speechSynthesis'in window)speechSynthesis.cancel();}
+$$('[data-tab]').forEach((b,i)=>{b.onclick=()=>tab(b.dataset.tab);b.onkeydown=e=>{if(['ArrowRight','ArrowLeft','Home','End'].includes(e.key)){e.preventDefault();let j=e.key==='Home'?0:e.key==='End'?3:(i+(e.key==='ArrowRight'?1:3))%4;let n=$$('[data-tab]')[j];n.focus();tab(n.dataset.tab)}}});tab('a');
+// A: bounded reading surface, capture, evidence review and source-linked synthesis.
+let reviewMode='scan', bucket='Corroborate externally', judgment='', manualTasks=[];
+function setMode(mode){reviewMode=mode;$$('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));$('#scan-actions').hidden=mode==='read';$('#read-actions').hidden=mode==='scan';$('#task-heading').textContent=mode==='read'?'Review the evidence':'Captured concern';$('#mode-help').textContent=mode==='read'?'Compare the source, evaluate support and record your own judgment.':'Capture a concern now. Return to the evidence in Read mode.';}
+$$('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));$('#start-read').onclick=()=>setMode('read');
+const bucketQuestions={'Keep':'Retain the distinction between familiarity and recall.','Delete':'No proposed deletions yet.','Corroborate internally':'Does §2.2 qualify the claim in §2.1?','Corroborate externally':'Does the evidence support “every student”?','Review with someone else':'Discuss the scope of this claim with your supervisor.','Read again later':'Revisit how the findings are interpreted in §2.2.'};
+$$('[data-bucket]').forEach(b=>b.onclick=()=>{bucket=b.dataset.bucket;$$('[data-bucket]').forEach(x=>x.classList.toggle('active',x===b));$('#bucket-label').textContent=bucket;$('#task-question').textContent=bucketQuestions[bucket];$('#review-judgment').value='';});
+$('#marked-passage').onclick=()=>{$$('[data-bucket]')[3].click();toast('Opened the concern linked to p. 3, §2.1.');};
+$('#source-jump').onclick=()=>{$('#marked-passage').focus();$('#source-paper').animate([{boxShadow:'0 0 0 4px #d8ebfb'},{boxShadow:'0 0 0 0 #d8ebfb'}],{duration:900});};
+for(const mode of ['note','command']) $('#annotation-'+mode).onclick=()=>{['note','command'].forEach(m=>$('#annotation-'+m).setAttribute('aria-pressed',String(m===mode)));$('#annotation-hint').textContent=mode==='note'?'Note mode · Handwriting records a thought without triggering an action.':'Command mode · Click the highlighted passage to open its assigned review task.';};
+$('#save-judgment').onclick=()=>{let v=$('#review-judgment').value.trim();if(!v){toast('Add your judgment before recording it.');$('#review-judgment').focus();return;}judgment=`${bucket}: ${v}`;toast('Judgment recorded with document v1 and source p. 3, §2.1.');$('#task-heading').textContent='Judgment recorded';};
+$('#manual-task').onclick=()=>{$('#manual-task-form').hidden=!$('#manual-task-form').hidden;if(!$('#manual-task-form').hidden)$('#manual-task-text').focus()};
+$('#save-manual-task').onclick=()=>{const v=$('#manual-task-text').value.trim();if(!v)return toast('Describe the task first.');manualTasks.push(v);$('#manual-task-form').hidden=true;$('#manual-task-text').value='';const n=document.createElement('div');n.className='task-card';n.textContent=`Manual task · p. 3, §2.1: ${v}`;$('.task-pane').append(n);toast('Task captured with its passage location.');};
+const synthesisViews={
+'Standard Argument Form':`<div class="mapline"><b>P1</b><span>Retrieval requires bringing an idea to mind before checking it.</span><button class="source-link synthesis-source">§2.1 ↗</button></div><div class="mapline"><b>P2</b><span>Practice benefits persist and transfer to understanding. <em class="muted">Implied premise · needs evidence</em></span><span class="pill pink" style="padding:2px 6px;font-size:9px">Inferred</span></div><div class="mapline"><b>C1</b><span>Regular retrieval may have a role in the learning design. <em class="muted">Proposed reconstruction</em></span><button class="source-link synthesis-source">§2.1 ↗</button></div>`,
+'Theory of Change':`<div class="flow"><span>Retrieval activities · §2.1</span>→<span>Practice recalling ideas · §2.1</span>→<span>Long-term understanding · claim in §2.1</span></div><p class="muted mt-3">The causal link is a proposed reading. Transfer, persistence and the claim about every student still need support. The qualification in §2.2 limits generalisation.</p>`,
+'Annotated bibliography':`<div class="grid sm:grid-cols-2 gap-x-8 gap-y-3">${[['Citation','Demonstration document, retrieval-practice.pdf. No real publication metadata supplied.'],['Introduction','An illustrative discussion of retrieval practice.'],['Aims and research methods','The excerpt discusses learning; methods are not supplied.'],['Scope','One course is mentioned in §2.2.'],['Usefulness','Consider relevance to your own research question.'],['Limitations','No participant-level results or follow-up duration supplied.'],['Conclusions','A possible role for regular practice is suggested in §2.1.'],['Reflection','Add how this source informs your thinking.']].map(([a,b],i)=>`<label><b>${i+1}. ${a}</b><textarea class="field mt-1 text-xs" aria-label="${a}" style="min-height:62px">${b}</textarea></label>`).join('')}</div>`,
+'Within-document map':`<div class="mapline"><b>Claim</b><span>“Every student” · §2.1</span><button class="source-link synthesis-source">Source ↗</button></div><div class="mapline"><b>Qualifier</b><span>One course; generalisation requires care · §2.2</span><button class="source-link synthesis-source">Source ↗</button></div><p class="muted mt-3">Suggested connection: the qualification may narrow the claim. The reader decides whether the wording is inconsistent or reflects a different scope.</p>`};
+function showSynthesis(){ $('#synthesis-output').innerHTML=synthesisViews[$('#synthesis-type').value];$$('.synthesis-source').forEach(b=>b.onclick=()=>$('#source-jump').click())}$('#synthesis-type').onchange=showSynthesis;showSynthesis();
+let exportText='',exportFilename='';function exportDialog(title,txt,file){$('#dialog-title').textContent=title;$('#export-content').textContent=txt;exportText=txt;exportFilename=file;$('#export-dialog').showModal();}$('#close-dialog').onclick=()=>$('#export-dialog').close();$('#download-export').onclick=()=>{let url=URL.createObjectURL(new Blob([exportText],{type:'text/plain'}));let a=document.createElement('a');a.href=url;a.download=exportFilename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+$('#export-review').onclick=()=>exportDialog('Review record',`DEMONSTRATION REVIEW\nDocument: retrieval-practice.pdf · v1\nSource: p. 3, §2.1\nConcern: Does the evidence support “every student”?\n\nJudgment: ${judgment||'Not yet recorded'}\n\nManual tasks:\n${manualTasks.length?manualTasks.join('\n'):'None'}\n\nSynthesis view: ${$('#synthesis-type').value}\n${$('#synthesis-output').innerText}\n\nSuggested source links remain unverified unless the reader records a judgment.`, 'sample-review.txt');
+// B: input -> context -> response owner -> outcome. All events remain local.
+let reaction='Confused',drawMode=false,reactions=12,feedbackCount=0;
+function routeHint(){const x=drawMode?$('#draw-intent').value:reaction;$('#route-hint').textContent=x==='Question'?'Question → Q&A moderator':x==='Assistance'?'Assistance → teaching assistant':'Reaction → session feedback';}
+$$('[data-reaction]').forEach(b=>b.onclick=()=>{reaction=b.dataset.reaction;$$('[data-reaction]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));routeHint()});
+function inputMode(draw){drawMode=draw;$('#b-draw-input').hidden=!draw;$('#b-reaction-input').hidden=draw;$('#b-text-mode').setAttribute('aria-pressed',String(!draw));$('#b-draw-mode').setAttribute('aria-pressed',String(draw));routeHint();}$('#b-text-mode').onclick=()=>inputMode(false);$('#b-draw-mode').onclick=()=>inputMode(true);$('#draw-intent').onchange=routeHint;
+const canvas=$('#gesture-canvas'),ctx=canvas.getContext('2d');let drawing=false;ctx.lineWidth=4;ctx.lineCap='round';ctx.strokeStyle='#315a77';function xy(e){let r=canvas.getBoundingClientRect();return[(e.clientX-r.left)*canvas.width/r.width,(e.clientY-r.top)*canvas.height/r.height]};canvas.onpointerdown=e=>{drawing=true;canvas.setPointerCapture(e.pointerId);ctx.beginPath();ctx.moveTo(...xy(e));};canvas.onpointermove=e=>{if(drawing){ctx.lineTo(...xy(e));ctx.stroke();}};canvas.onpointerup=canvas.onpointercancel=()=>drawing=false;$('#clear-drawing').onclick=()=>ctx.clearRect(0,0,canvas.width,canvas.height);
+function bindQueue(){ $$('.queue-resolve').forEach(b=>b.onclick=()=>{const answered=b.textContent.includes('answered');b.textContent=answered?'Answered ✓':'Resolved ✓';b.disabled=true;const item=b.closest('.queue-item');item.querySelector('.tiny').textContent+=answered?' · Answered':' · Resolved';if(item.dataset.mine)$('#participant-status').textContent=answered?'Your question was marked answered.':'Your assistance request was marked resolved.';toast('Outcome retained in the session follow-up.');});}bindQueue();
+$('#b-context').onchange=()=>{const old=$('#b-context').selectedIndex===1;$('#transcript-time').textContent=old?'22:40':'24:18';$('#transcript-copy').textContent=old?'“Checking understanding involves more than noticing that an explanation feels familiar.”':'“Recognising an answer and retrieving it without a cue ask different things of the learner.”';};
+$('#submit-feedback').onclick=()=>{let type=drawMode?$('#draw-intent').value:reaction,msg=$('#b-message').value.trim(),moment=$('#b-context').value;const request=['Question','Assistance'].includes(type);if(request&&!msg){toast('Add detail so the response owner can act on your request.');$('#b-message').focus();return;}if(request){let div=document.createElement('div');div.className='queue-item';div.dataset.mine='true';div.innerHTML=`<span class="pill ${type==='Question'?'pink':''}">${type==='Question'?'?':'!'}</span><div class="flex-1"><b class="text-xs">${esc(msg)}</b><p class="tiny muted mt-1">${type==='Question'?'Q&A moderator':'Teaching assistant'} · ${esc(moment)} · Received</p></div><button class="btn small outline queue-resolve">${type==='Question'?'Mark answered':'Mark resolved'}</button>`;$('#response-queue').prepend(div);bindQueue();}else{reactions++;$('#reaction-total').textContent=`${reactions} reactions`;$('#latest-reaction').textContent=`Latest ${type.toLowerCase()} reaction · ${moment}${msg?' — '+msg:''}`;}feedbackCount++;$('#participant-status').textContent=request?`${type} received by ${type==='Question'?'Q&A moderator':'teaching assistant'}. Awaiting response.`:`${type} reaction captured at ${moment.split(' · ')[0]}.`;toast(request?'Request routed in the sample session.':'Reaction added to the session feedback.');};
+// C: template-only wording based on student-supplied content, never an invented argument.
+let relation='because',proposal=$('#c-proposed-text').textContent,paragraphs=[],history=[];
+function snapshot(){history.push({proposal,paragraphs:[...paragraphs],hidden:$('#c-candidate').hidden});}
+function renderWriting(){ $('#c-proposed-text').textContent=proposal;$('#c-paragraphs').innerHTML=paragraphs.map((p,i)=>`<p data-added="${i}" style="padding:8px 12px;background:#fff6f9;border-radius:8px">${esc(p)}</p>`).join('');}
+$$('[data-relation]').forEach(b=>b.onclick=()=>{relation=b.dataset.relation;$$('[data-relation]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('#c-reason-label').textContent=relation==='because'?'Your reason':relation==='however'?'Your contrasting point':'Your resulting point';});
+$('#c-propose').onclick=()=>{let claim=$('#c-claim').value.trim().replace(/[.!?]$/,''),reason=$('#c-reason').value.trim().replace(/[.!?]$/,'');if(!claim||!reason){toast('Supply both parts of your meaning before proposing wording.');return;}snapshot();const certainty=$('#c-certainty').value;if(/\b(can|may)\b/.test(claim))claim=claim.replace(/\b(can|may)\b/,certainty);proposal=claim+(relation==='because'?' because ':`; ${relation}, `)+reason+'.';$('#c-candidate').hidden=false;$('#c-target').value='proposal';$('#c-status').textContent='Proposed wording uses only your supplied statements and selected relationship. Review its meaning.';renderWriting();};
+$('#c-accept').onclick=()=>{snapshot();paragraphs.push(proposal);$('#c-candidate').hidden=true;$('#c-target').value='paragraph';$('#c-status').textContent='Sentence added to the draft. You can revise your meaning to build the next paragraph.';renderWriting();};$('#c-edit-meaning').onclick=()=>{$('#c-claim').focus();toast('Revise your supplied meaning, then propose wording again.');};
+$('#c-soften').onclick=()=>{let target=$('#c-target').value;if(target==='paragraph'&&!paragraphs.length)return toast('Add a paragraph before targeting it.');if(target==='proposal'&&$('#c-candidate').hidden)return toast('Create a new proposal or target the added paragraph.');const old=target==='proposal'?proposal:paragraphs.at(-1);if(!/\b(can|will|does|is|are)\b/.test(old))return toast('No supported certainty change found. Revise your input to preserve the intended meaning.');snapshot();const updated=old.replace(/\bcan\b/,'may').replace(/\bwill\b/,'might').replace(/\bdoes\b/,'may').replace(/\bis\b/,'may be').replace(/\bare\b/,'may be');if(target==='proposal')proposal=updated;else paragraphs[paragraphs.length-1]=updated;renderWriting();$('#c-status').textContent='Certainty reduced. Review whether this still says what you mean.';};
+$('#c-move').onclick=()=>{if($('#c-target').value!=='paragraph')return toast('Select “Added paragraph” as the command target.');if(paragraphs.length<2)return toast('Add a second paragraph to try moving it above the first.');snapshot();let i=paragraphs.length-1;[paragraphs[i],paragraphs[i-1]]=[paragraphs[i-1],paragraphs[i]];renderWriting();toast('Last paragraph moved up one position.');};$('#c-undo').onclick=()=>{const old=history.pop();if(!old)return toast('No edit to undo.');proposal=old.proposal;paragraphs=old.paragraphs;$('#c-candidate').hidden=old.hidden;renderWriting();toast('Last edit undone.');};
+function draftText(){return 'Learning beyond the classroom\n\nAccess to a lecture recording is one part of a wider learning experience. The way students use it deserves closer attention.\n\n'+paragraphs.join('\n\n');}$('#c-export').onclick=()=>exportDialog('Draft text',draftText(),'sample-expression-draft.txt');$('#c-speak').onclick=()=>{if(!('speechSynthesis'in window))return toast('Speech output is unavailable in this browser.');speechSynthesis.cancel();let utterance=new SpeechSynthesisUtterance(draftText());utterance.rate=.92;utterance.onerror=()=>toast('Speech could not play in this browser. Text export remains available.');speechSynthesis.speak(utterance);toast('Reading the accepted draft aloud.');};$('#c-stop').onclick=()=>{if('speechSynthesis'in window)speechSynthesis.cancel();};
+// D: Farming UI intentionally contains no agent-orchestration elements or terminology.
+const farm={level:1,phase:'farm',plots:[0,0,0],order:[],selection:null,complete:false};
+function farmHeader(){return `<div class="app-header"><div class="flex items-center gap-3"><span class="app-logo" style="background:var(--pink)">${icon('leaf')}</span><div><h3>Little Meadow</h3><p class="tiny muted">Spring · Day ${farm.level} · Sunny</p></div></div><div class="flex items-center gap-3"><span class="pill pink">Level ${farm.level}</span><span class="pill">${farm.level===1?120:210} coins</span><button class="btn small outline" id="farm-reset">Restart demo</button></div></div>`;}
+function renderFarm(){const n=farm.level===1?3:6;const done=farm.plots.filter(x=>x===3).length;const crops=farm.level===1?['🥕','🥕','🥕']:['🌾','🌾','🌾','🍓','🍓','🍓'];$('#d-content').innerHTML=farmHeader()+`<div class="farm-layout"><div><div class="farm-world" aria-label="Farm with a pink barn, pond, trees and ${n} crop plots"><div class="farm-sky"><div class="cloud"></div><div class="cloud two"></div></div><div class="farm-ground"></div><div class="farm-path"></div><div class="barn"><div class="barn-door"></div></div><div class="tree"></div><div class="tree small"></div><div class="fence" aria-hidden="true">╬╬╬╬╬</div><div class="pond"></div><span class="flower" style="left:62%;top:170px" aria-hidden="true">✿</span><span class="flower" style="left:15%;top:280px" aria-hidden="true">✿</span><div class="farm-status"><span>☀ 09:30</span><span>♡ Energy ${100-done*5}</span></div><div class="garden">${farm.plots.map((stage,i)=>`<button class="plot ${stage===2?'watered':''}" data-plot="${i}" aria-label="${stage===0?'Plant':stage===1?'Water':stage===2?'Harvest':'Harvested'} ${farm.level===1?'carrot':i<3?'wheat':'strawberry'} plot ${i+1}" ${stage===3?'disabled':''}>${['·','🌱',crops[i],'✓'][stage]}</button>`).join('')}</div><div class="farm-tools" aria-hidden="true">🧺 🪣 🌱</div></div><p class="tiny muted mt-3">Select a plot to plant, select it again to water, then harvest when it’s ready. Growth is accelerated in this mockup.</p></div><aside class="card p-5"><span class="eyebrow muted">A new day on the farm</span><h2 class="mt-3">${farm.level===1?'Your first harvest':'A bigger basket'}</h2><p class="text-xs muted mt-3">${farm.level===1?'Start with three carrot plots. Plant your seeds, give them water and gather your first crop.':'Grow wheat and strawberries for the village market. Work on either field while the other is growing.'}</p><div class="inset mt-5"><div class="flex justify-between text-xs mb-3"><b>Harvest basket</b><span>${done} / ${n}</span></div><div class="progress"><i style="width:${done/n*100}%"></i></div><p class="tiny muted mt-3">${farm.level===1?'🥕 Three fresh carrots':'🌾 Three wheat bundles · 🍓 Three strawberries'}</p></div><div class="mt-5 text-xs"><p class="mb-3">${farm.plots.some(x=>x>0)?'✓':'○'} Plant your seeds</p><p class="mb-3">${farm.plots.some(x=>x>1)?'✓':'○'} Water the young plants</p><p>${done===n?'✓':'○'} Gather the harvest</p></div><button class="btn primary w-full mt-6" id="farm-finish" ${done<n?'disabled':''}>${done===n?'Celebrate your level up':'Finish your harvest'} ${icon('arrow')}</button></aside></div>`;
+$$('[data-plot]').forEach(b=>b.onclick=()=>{farm.plots[Number(b.dataset.plot)]++;renderFarm();});$('#farm-finish').onclick=()=>{farm.phase='bridge';renderBridge()};$('#farm-reset').onclick=resetFarm;}
+const bridges={1:[['Plant → water → harvest','Task dependencies','Some work can begin only after earlier steps finish.'],['Seeds, water and tools','Inputs and tools','A worker needs the right inputs and capabilities for a task.'],['Inspect the harvested crop','Check the output','Completing an action is different from verifying its result.']],2:[['Wheat and berries grow in separate plots','Parallel work','Independent tasks can progress at the same time.'],['One basket gathers both crops','Join the results','A combined output waits for all required branches.'],['A crop is not ready for market','Retry or seek help','Check failures before proceeding; retry a failed task or request review.']]};
+function renderBridge(){const lvl=farm.level;$('#d-content').innerHTML=`<div class="learning-page"><div class="flex justify-between items-center gap-3"><div class="learning-step"><span>Harvest completed</span>→<b>Bridge ${lvl}</b>→<span>Exercise ${lvl}</span></div><span class="pill pink">Level up ✦</span></div><p class="eyebrow muted mt-8">A pause between farm levels</p><h2>${lvl===1?'From a harvest to a workflow':'From two fields to parallel work'}</h2><p class="muted text-sm mb-6">Reflect on what you just did. These are analogies for agent orchestration.</p><div class="bridge-grid"><p class="eyebrow" style="color:var(--pink-ink)">On the farm</p><span></span><p class="eyebrow" style="color:var(--blue-ink)">In agent orchestration</p>${bridges[lvl].map(([f,a,d])=>`<div class="bridge-card"><b>${f}</b></div><span class="muted">→</span><div class="bridge-card"><b>${a}</b><p class="tiny muted mt-1">${d}</p></div>`).join('')}</div><p class="tiny muted mt-5">The analogy has limits: an AI agent’s output can be uncertain and needs validation. A ready crop does not capture that uncertainty.</p><div class="flex justify-between items-center mt-7 gap-3"><span class="tiny muted">Next: apply the concepts outside the farm.</span><button class="btn primary" id="begin-exercise">Try exercise ${lvl} ${icon('arrow')}</button></div></div>`;$('#begin-exercise').onclick=()=>{farm.phase='exercise';farm.order=[];farm.selection=null;renderExercise()};}
+const choices1=[['review','Reviewer','Validate the summary against the source.'],['summarise','Summariser','Write a summary from the extracted passages.'],['read','Reader','Extract relevant passages from the supplied document.']];
+function renderExercise(){const lvl=farm.level;$('#d-content').innerHTML=`<div class="learning-page"><div class="learning-step"><span>Bridge ${lvl} complete</span>→<b>Exercise ${lvl}</b>→<span>${lvl===1?'Farm level 2':'Review complete'}</span></div><p class="eyebrow muted mt-8">Agent orchestration · Practice ${lvl}</p><h2>${lvl===1?'Put the handoffs in order':'Let independent work happen together'}</h2><p class="muted text-sm">${lvl===1?'Build a source-grounded summary workflow. Select the agents in the order they should run.':'Two agents inspect different source documents. A synthesis agent needs both checked results. Choose the appropriate workflow.'}</p>${lvl===1?`<div class="flow mt-5 mb-5" id="order-preview">${farm.order.length?farm.order.map((id,i)=>`<span>${i+1}. ${choices1.find(x=>x[0]===id)[1]}</span>`).join('<b class="muted">→</b>'):'<span>1. Select the first agent</span><b class="muted">→</b><span>2. Then the next</span><b class="muted">→</b><span>3. Finish with a check</span>'}</div>${choices1.map(([id,n,d])=>`<button class="exercise-choice" data-agent="${id}" aria-pressed="${farm.order.includes(id)}"><span class="pill">${farm.order.includes(id)?farm.order.indexOf(id)+1:'+'}</span><span><b>${n}</b><small class="block muted">${d}</small></span></button>`).join('')}`:`<div class="mt-5">${[['early','Start synthesis when either reader finishes','Use whichever result arrives first.'],['parallel','Read A and B in parallel → validate both → synthesise','If one validation fails, retry that branch before combining.'],['repeat','Repeat both readers until the outputs match','Treat identical wording as proof of correctness.']].map(([id,n,d])=>`<button class="exercise-choice" data-workflow="${id}" aria-pressed="${farm.selection===id}"><span class="pill">${farm.selection===id?'✓':'○'}</span><span><b>${n}</b><small class="block muted">${d}</small></span></button>`).join('')}</div>`}<div class="inset mt-5" id="exercise-feedback" role="status">${lvl===1?'Think about what each agent needs before it can begin.':'Think about independence, required inputs and validation before combining results.'}</div><div class="flex gap-3 justify-end mt-5"><button class="btn outline" id="exercise-clear">Reset answer</button><button class="btn primary" id="exercise-check">Check workflow ${icon('check')}</button><button class="btn primary" id="exercise-next" hidden>${lvl===1?'Return to farm · Level 2':'Complete review'} ${icon('arrow')}</button></div></div>`;
+$$('[data-agent]').forEach(b=>b.onclick=()=>{let id=b.dataset.agent;if(farm.order.includes(id))farm.order=farm.order.filter(x=>x!==id);else farm.order.push(id);renderExercise()});$$('[data-workflow]').forEach(b=>b.onclick=()=>{farm.selection=b.dataset.workflow;renderExercise()});$('#exercise-clear').onclick=()=>{farm.order=[];farm.selection=null;renderExercise()};$('#exercise-check').onclick=()=>{let correct=lvl===1?farm.order.join(',')==='read,summarise,review':farm.selection==='parallel';$('#exercise-feedback').textContent=correct?(lvl===1?'Correct. The reader supplies passages to the summariser; the reviewer then checks the summary against those sources.':'Correct. Independent reading can run in parallel. Synthesis waits for both validated results; a failed branch needs attention before the join.'):(lvl===1?'Not yet. The summariser needs the reader’s passages, and the reviewer needs the summary. Try another order.':'Not yet. Both source results are required, and matching text does not prove correctness. Reconsider the join and validation.');if(correct){$('#exercise-check').hidden=true;$('#exercise-next').hidden=false;}};$('#exercise-next').onclick=()=>{if(lvl===1){farm.level=2;farm.phase='farm';farm.plots=[0,0,0,0,0,0];renderFarm();}else{farm.complete=true;renderComplete()}};}
+function renderComplete(){$('#d-content').innerHTML=`<div class="learning-page text-center flex flex-col items-center justify-center"><span class="app-logo" style="width:70px;height:70px;border-radius:25px;background:var(--pink)">${icon('check')}</span><p class="eyebrow muted mt-6">Two levels · Two learning cycles</p><h2>A little farming.<br>A new way to understand workflows.</h2><p class="muted mt-3 max-w-xl">You practised sequencing and dependencies, then parallel work, validation and joining results.</p><div class="flow mt-7"><span>Farm 1 ✓</span><span>Bridge 1 ✓</span><span>Exercise 1 ✓</span><span>Farm 2 ✓</span><span>Bridge 2 ✓</span><span>Exercise 2 ✓</span></div><button class="btn primary mt-8" id="restart-complete">Explore the journey again ${icon('arrow')}</button><p class="tiny muted mt-4">End of the two-level mockup.</p></div>`;$('#restart-complete').onclick=resetFarm;}
+function resetFarm(){Object.assign(farm,{level:1,phase:'farm',plots:[0,0,0],order:[],selection:null,complete:false});renderFarm();}renderFarm();
+
+</script>
+</body></html>
